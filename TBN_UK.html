@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<head>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/clappr/clappr-level-selector-plugin/f64051e4/dist/level-selector.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/video-dev/clappr-rtmp-plugin@latest/dist/rtmp.min.js"></script>
+  
+</head>
+
+<body>
+  <div id="player"></div>
+  
+  <script>
+  var player = new Clappr.Player({source: "https://acaooyalahd2-lh.akamaihd.net/i/TBN10_delivery@332891/master.m3u8", parentId: "#player",  
+  height: 320,
+  width: 565,
+  autoPlay: true,
+  plugins: {
+    'core': [LevelSelector]
+  }
+});
+  </script>
+  </body> 
+
+</html>
