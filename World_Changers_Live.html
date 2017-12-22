@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset=utf-8 />
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+
+<title>World Changers Live</title>
+</head>
+
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "https://wchtna4.tulix.tv/live/worldchangers1-me.m3u8", poster: 'https://swf.tulix.tv/iframe/wchangerslive/livepc.png', height:"100%", width:"100%", plugins:{'core': [LevelSelector]}, autoPlay: true, parentId: "#player"});
+  </script>
+</body>
+
+</html>
