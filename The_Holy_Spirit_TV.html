@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset=utf-8 />
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/video-dev/clappr-rtmp-plugin@latest/dist/rtmp.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+
+<title>The Holy Spirit TV</title>
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+        <div class="embed-responsive embed-responsive-16by9">
+        <div id="player" class="embed-responsive-item"></div>
+        </div>	
+<script>
+
+$(function () {
+    $("#player").resize({
+        aspectRatio: 16 / 9,
+        maxHeight: 720,
+        maxWidth: 1280,
+        minHeight: 180,
+        minWidth: 320
+    });
+    var player = new Clappr.Player({
+        source: 'http://205.164.56.130:1935/ed381/ed381/playlist.m3u8',
+        baseUrl: 'http://cdn.clappr.io/latest',
+        poster: 'http://theholyspirit.tv/wp-content/uploads/2016/04/Logo-512-x-512.png',
+        parentId: "#player",
+        height: "100%",
+        width: "100%",
+		autoPlay: true,
+		plugins: {'core': [LevelSelector]},
+    });
+});
+</script>
+</body>
+</html>
