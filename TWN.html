@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset=utf-8 />
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+<title>The Word Network</title>
+
+</head>
+
+<body>
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "http://thewordlive-lh.akamaihd.net/i/thewordlive_univ@141816/master.m3u8", poster: 'https://cdn.rawgit.com/grchannels/data/ba3d70b2/logos/The_Word_Network_logo_1.png', height:"100%", width:"100%", plugins:{'core': [LevelSelector]}, autoPlay: true, parentId: "#player"});
+  </script>
+</body>
+
+</html>
